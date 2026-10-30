@@ -1,8 +1,13 @@
-string = input("Enter a string: ")
+import sys
+
+string = sys.argv[1]
 
 reverse = string[::-1]
 
 if string == reverse:
-    print("The given string is a Palindrome")
+    print(string, "is a Palindrome")
 else:
-    print("The given string is Not a Palindrome")
+    print(string, "is not a Palindrome")
+
+
+    
